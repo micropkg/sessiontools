@@ -19,7 +19,7 @@ type Manager struct {
 
 //NewManager : Create New Manager
 func NewManager(key []byte, c connection.Connection) (*Manager, error) {
-	c.Open()
+	//c.Open()
 	m := new(Manager)
 	m.c = c
 	m.key = key
